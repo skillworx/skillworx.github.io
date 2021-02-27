@@ -22,7 +22,7 @@
 
 
     <img id="navBarImg" width="25px" height="25px" src="img/588a6507d06f6719692a2d15.png" alt="menu" onclick="openNav()"></a>
-      <h2 id="navBarText">S k i l l <span style="color: #85dc7c">w o r x</span></h2>
+      <h2 id="navBarText">S k i l l <span style="color: #85dc7c">w o r x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
     <div class="dropdown" id="myNav">
 
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -36,14 +36,33 @@
 
   <div id= "movingBody">
 
-  <div class="body1" id= "intro">
+  <div class="body1">
 
-    <h1>P a s s i o n a t e &nbsp;&nbsp;a b o u t  &nbsp;&nbsp;<span id="introMsg" style="color: #85dc7c"></span></h1>
-    <br>
-    <br>
-    <br>
-    <h1>Your partner in<span id="partner1" style="color: #85dc7c"> </span></h1>
-    <h1>Your first choice in<span id="partner2" style="color: #85dc7c"> </span></h1>
+    <h1>
+
+      <br>
+      <br>
+      <!--
+      Your partner and business<span id="partner1" style="color: #85dc7c"> </span>
+      <br>
+      Your first choice in<span id="partner2" style="color: #85dc7c"> </span>
+      <br>
+      We deliver<span id="partner3" style="color: #85dc7c"> </span>
+      <br>
+      Computing made<span id="partner4" style="color: #85dc7c"> </span>
+      <br>
+      <br>
+      -->
+      <span style="color: #85dc7c">Understanding </span>is our cornerstone
+      <br>
+      <br>Now, <span id="partner5" style="color: #85dc7c"></span>
+      <br>
+      <br>
+      We're passionate about<span id="introMsg" style="color: #85dc7c"></span>
+    </h1>
+
+
+
 
   </div>
   <span id="introduction"></span>
@@ -151,13 +170,22 @@
     }
 
     $(function () {
-      showText("#partner1", 'Business strategy' , 0, 50);
+      showText("#partner1", 'Strategist' , 0, 100);
     });
     $(function () {
-      showText("#introMsg", ' I T' , 0, 250);
+      showText("#introMsg", ' I T' , 0, 400);
     });
     $(function () {
       showText("#partner2", 'Training' , 0, 100);
+    });
+    $(function () {
+      showText("#partner3", 'Authenticity' , 0, 100);
+    });
+    $(function () {
+      showText("#partner4", 'Easy' , 0, 100);
+    });
+    $(function () {
+      showText("#partner5", 'more than ever' , 0, 100);
     });
 
 </script>
