@@ -126,7 +126,7 @@ span{
 .body1{
   height: calc(100vh + 35px);
   background-color: black;
-  margin-top: -75px;
+  margin-top: -45px;
   font-family: exo2;
   width: calc(100% + 100vh);
   color: white;
