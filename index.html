@@ -38,7 +38,7 @@
 
   <div class="body1">
 
-    <h1>
+    <h1 id="moveTxt" style="display: none">
 
       <br>
       <br>
@@ -55,10 +55,10 @@
       -->
       <span style="color: #85dc7c">Understanding </span>is our cornerstone
       <br>
-      <br>Now, <span id="partner5" style="color: #85dc7c"></span>
+      <br>Now, more than<span id="partner5" style="color: #85dc7c"></span>
       <br>
       <br>
-      We're passionate about<span id="introMsg" style="color: #85dc7c"></span>
+      passionate about<span id="introMsg" style="color: #85dc7c"></span>
     </h1>
 
 
@@ -173,7 +173,7 @@
       showText("#partner1", 'Strategist' , 0, 100);
     });
     $(function () {
-      showText("#introMsg", ' I T' , 0, 400);
+      showText("#introMsg", ' I T' , 0, 200);
     });
     $(function () {
       showText("#partner2", 'Training' , 0, 100);
@@ -185,7 +185,12 @@
       showText("#partner4", 'Easy' , 0, 100);
     });
     $(function () {
-      showText("#partner5", 'more than ever' , 0, 100);
+      showText("#partner5", ' ever' , 0, 200);
+    });
+
+    $(document).ready(function(){
+        $("h1").fadeIn({queue: false, duration: 1000});
+        $("h1").animate({left: '30px'},1000);
     });
 
 </script>

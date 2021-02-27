@@ -13,6 +13,10 @@ body {
   display: block;
 }
 
+#moveTxt{
+  position: ;
+}
+
 @font-face {
   font-family: exo2;
   src: url(../Exo2-Thin.ttf);
