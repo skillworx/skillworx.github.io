@@ -1,0 +1,206 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: lightgrey;
+  overflow-x: hidden;
+  transition: margin-left 0.4s;
+
+
+}
+
+.webContainer{
+  display: block;
+}
+
+@font-face {
+  font-family: exo2;
+  src: url(../Exo2-Thin.ttf);
+}
+
+@font-face {
+  font-family: exo2-2;
+  src: url(../Exo2-VariableFont_wght.ttf);
+}
+
+.navBar {
+  background: #100e0d;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #85dc7c;
+  text-align: left;
+  padding-top:40px;
+  padding-left: 20px;
+}
+
+#navBarText {
+  color: #f1f1f1;
+  font-family: exo2;
+  font-size: 22px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+#navBarImg{
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  text-align: left;
+  float: left;
+  cursor: pointer;
+}
+
+.navBarJS {
+  position: relative;
+  top: 25%;
+  text-align: center;
+}
+
+.dropdown {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition:0.4s;
+  padding-top: 60px;
+}
+
+.dropdown a {
+
+  text-decoration: none;
+  font-size: 36px;
+  padding-left: 15px;
+  text-align: left;
+  color: #818181;
+  display: block;
+  transition: 0.4s;
+  font-family: exo2;
+  color: #85dc7c;
+}
+
+
+.dropdown a:hover{
+  color: #f1f1f1;
+}
+
+.dropdown .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+
+  .dropdown {
+    padding-top: 15px;
+  }
+
+  .dropdown a {
+    font-size: 18px;
+  }
+
+  .dropdown .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+span{
+  font-family: exo2-2;
+}
+
+.body1{
+  height: calc(100vh + 35px);
+  background-color: black;
+  margin-top: -75px;
+  font-family: exo2;
+  width: calc(100% + 100vh);
+  color: white;
+  right: 0;
+  left: 0;
+  vertical-align: top;
+}
+
+
+.body2{
+  font-family: exo2-2;
+  font-size: 3vh;
+  width: 90%;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  color: #232322;
+}
+
+.body3{
+  font-family: exo2-2;
+  font-size: 3vh;
+  width: 90%;
+  margin-right: 3vh;
+  margin-left: 3vh;
+  color: #232322;
+}
+
+.body4{
+  color: #85dc7c;
+  width: calc(100% + 100vh);
+  padding: 0;
+  margin: 0;
+  font-size: 2vh;
+  font-family: exo2;
+  background-color: #100e0d;
+}
+
+h3{
+  padding-left: 5vh;
+  line-height: 10px;
+}
+
+h1{
+  top: 20vh;
+  left: 5vh;
+  position: relative;
+  font-size: 20px;
+  font-family: exo2;
+}
+
+#firstLine{
+  color: #85dc7c;
+  font-size: 4vh;
+  width: 100%;
+}
+
+#secondLine{
+  color: #85dc7c;
+  font-size: 4vh;
+  width:100%;
+}
+
+ul.skills1{
+  list-style-type: none;
+}
+
+ul.skills2{
+  list-style-type: none;
+}
+
+ul.skills3{
+  list-style-type: none;
+}
+
+
+
+
