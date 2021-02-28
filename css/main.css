@@ -27,7 +27,13 @@ body {
   display: block;
 }
 
+#rocketImg{
+  display: block;
+  padding-left: 50vw;
+  margin-top: -50px;
 
+
+}
 
 @font-face {
   font-family: exo2;
@@ -82,7 +88,7 @@ li a{
 
 #skillworxLink{
   padding-left: 120px;
-  padding-right: 130px;
+
 }
 
 #navBarImg{
