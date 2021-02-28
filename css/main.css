@@ -2,20 +2,32 @@ body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  background-color: lightgrey;
+  background-color: whitesmoke;
   overflow-x: hidden;
   transition: margin-left 0.4s;
 
 
 }
 
+@media all and (max-width: 830px) {
+  #newsLink { display: none; }
+}
+@media all and (max-width: 830px) {
+  #contactLink { display: none; }
+}
+@media all and (max-width: 830px) {
+  #servicesLink { display: none; }
+}
+
+@media all and (min-width: 830px) {
+  #navBarImg { display: none; }
+}
+
 .webContainer{
   display: block;
 }
 
-#moveTxt{
-  position: ;
-}
+
 
 @font-face {
   font-family: exo2;
@@ -32,7 +44,7 @@ body {
   z-index: 9999;
   position: fixed;
   width: 100vw;
-  border-bottom: 1px solid #85dc7c;
+  border-bottom: 1px solid #b55f3c;
   text-align: left;
   display: inline-block;
   padding-left: 20px;
@@ -45,9 +57,32 @@ body {
   color: #f1f1f1;
   font-family: exo2;
   font-size: 22px;
-  float: right;
   margin-right: 40px;
   margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  float: left;
+  padding-right: 50px;
+}
+
+li a{
+  display: block;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: exo2;
+}
+
+#skillworxLink{
+  padding-left: 100px;
+  padding-right: 150px;
 }
 
 #navBarImg{
@@ -89,7 +124,7 @@ body {
   display: block;
   transition: 0.4s;
   font-family: exo2;
-  color: #85dc7c;
+  color: lightgrey;
 }
 
 
@@ -131,11 +166,11 @@ span{
 }
 
 .body1{
-  height: 100vh;
+  height: 50vh;
   background-color: black;
   margin-top: calc(0vw + 20px);
   font-family: exo2;
-  width: 100vw;
+  width: 1000vw;
   color: white;
   position: relative;
   right: 0;
@@ -143,10 +178,13 @@ span{
   vertical-align: top;
 }
 
+#computers{
+  width: 80vw;
+}
 
 .body2{
   font-family: exo2-2;
-  font-size: 2vh;
+  font-size: 18px;
   width: 90%;
   margin-left: 3vh;
   margin-right: 3vh;
@@ -155,7 +193,7 @@ span{
 
 .body3{
   font-family: exo2-2;
-  font-size: 3vh;
+  font-size: 18px;
   width: 90%;
   margin-right: 3vh;
   margin-left: 3vh;
@@ -163,13 +201,15 @@ span{
 }
 
 .body4{
-  color: #85dc7c;
+  color: #b55f3c;
   width: calc(100% + 100vh);
   padding: 0;
   margin: 0;
-  font-size: 2vh;
+  font-size: 12px;
   font-family: exo2;
   background-color: #100e0d;
+  position: fixed;
+  bottom: 0;
 }
 
 h3{
@@ -186,27 +226,20 @@ h1{
 }
 
 #firstLine{
-  color: #85dc7c;
+  color: #b55f3c;
   font-size: 4vh;
   width: 100%;
 }
 
 #secondLine{
-  color: #85dc7c;
+  color: #b55f3c;
   font-size: 4vh;
   width:100%;
 }
 
-ul.skills1{
-  list-style-type: none;
-}
-
-ul.skills2{
-  list-style-type: none;
-}
-
-ul.skills3{
-  list-style-type: none;
+#disclaimer{
+  padding-left: 60vw;
+  margin-top: -25px;
 }
 
 

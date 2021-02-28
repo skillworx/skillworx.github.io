@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
   <title>main</title>
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -21,16 +21,16 @@
   <div class="navBar" id="navBar">
 
 
-    <img id="navBarImg" width="25px" height="25px" src="img/588a6507d06f6719692a2d15.png" alt="menu" onclick="openNav()"></a>
+    <img id="navBarImg" width="25px" height="25px" src="../img/588a6507d06f6719692a2d15.png" alt="menu" onclick="openNav()"></a>
 
 
 
         <div class="topNav" id="navBarText">
           <ul>
-            <li id="servicesLink"><a href="links/services.html">Services</a></li>
-            <li id="newsLink"><a href="links/news.html">News</a></li>
-            <li id="contactLink"><a href="links/contact.html">Contact</a></li>
-            <li id="skillworxLink"><a href="index.html">S k i l l <span style="color: #f68908">w o r x</span></a></li>
+            <li id="servicesLink"><a href="services.html">Services</a></li>
+            <li id="newsLink"><a href="news.html">News</a></li>
+            <li id="contactLink"><a href="contact.html">Contact</a></li>
+            <li id="skillworxLink"><a href="../index.html">S k i l l <span style="color: #40b9cd">w o r x</span></a></li>
           </ul>
         </div>
 
@@ -38,10 +38,10 @@
 
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="navBarJS">
-        <a href="index.html" onclick="closeNav()">Home</a>
-        <a href="links/services.html" onclick="closeNav()">Services</a>
-        <a href="links/news.html" onclick="closeNav()">News</a>
-        <a href="links/contact.html" onclick="closeNav()">Contact</a>
+        <a href="../index.html" onclick="closeNav()">Home</a>
+        <a href="services.html" onclick="closeNav()">Services</a>
+        <a href="news.html" onclick="closeNav()">News</a>
+        <a href="contact.html" onclick="closeNav()">Contact</a>
       </div>
     </div>
   </div>
@@ -52,10 +52,25 @@
 
     <h1 id="moveTxt" style="display: none">
 
-
       <br>
       <br>
-      <span style="color: #f68908">Passionate, </span><span id="introMsg"></span>
+      <!--
+      Your partner and business<span id="partner1" style="color: #85dc7c"> </span>
+      <br>
+      Your first choice in<span id="partner2" style="color: #85dc7c"> </span>
+      <br>
+      We deliver<span id="partner3" style="color: #85dc7c"> </span>
+      <br>
+      Computing made<span id="partner4" style="color: #85dc7c"> </span>
+      <br>
+      <br>
+      -->
+      <span style="color: #40b9cd">Luisteren </span>is our cornerstone
+      <br>
+      <br>Now, more <span id="partner5" style="color: #40b9cd"></span>
+      <br>
+      <br>
+      We're just passionate <span id="introMsg" style="color: #40b9cd"></span>
     </h1>
 
 
@@ -75,12 +90,10 @@
 
     <p><span id="secondLine"> Skills and experiences in IT </span>
 
-
   </div>
 
   <div class="body4" id="contact">
     <br>
-
     <h3><span style="color: white">Phone:</span> +32 (0)487 40 64 43</h3>
     <h3><span style="color: white">Mail:</span> h.atdhe@gmail.com</h3>
     <h4 id="disclaimer">Powered &nbsp;by&nbsp;&nbsp; S k i l l w o r x  &#xa9;</h4>
@@ -131,7 +144,7 @@
       showText("#partner1", 'Strategist' , 0, 100);
     });
     $(function () {
-      showText("#introMsg", 'about IT.' , 0, 270);
+      showText("#introMsg", 'about IT' , 0, 270);
     });
     $(function () {
       showText("#partner2", 'Training' , 0, 100);
