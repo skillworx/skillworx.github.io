@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	
 	<div class="pageTop  sticky-top">
 		<div class="displayPageTop">
 				<span class="accentColor"><i class="fa-solid fa-phone"></i></span> 0487 64 03 21
@@ -50,49 +49,44 @@
             </div>
         </nav>
     </div>
-    </div>
-    <header class="bgIndex">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1>UW DAKWERK</h1>
-					<h1>SPECIALIST</h1>
-					<span style="color: white"><h2> kwaliteit -en resultaatgericht </h2></span>
-					<a href="#" class="myButton">vrijblijvend offerte</a>
-				</div>
-			</div>
-		</div>
+    
+    <header>
+			
     </header>
-
-    <div class="intro">
-		<div class="offsetIntro">
-			<div class="col float-right">
-				<span class="sectionTitles">
-				   <span class="accentuate">dakwerken</span> en totaal<span class="accentuate">renovaties</span>
+	<div class="contactPage">
+		<div class="contactContainer">
+			<div class="contactUs">
+				<h3><span class="accentColor">CONTACTEER</span></h3>
+				<h3><span class="accentuate">Havolli BV</span></h3>
+				<br/>
+				<span class="checkmarks">
+					<p>&#10003; dakwerken</p>
+					<p>&#10003; renovatiewerken</p>
+					<p>&#10003; afbraak</p>
+					<p>&#10003; afvoer asbest</p><br/>
 				</span>
 			</div>
-			<div class="col">
-				<p>
-					Havolli BV bestaat nog maar 3 jaar in zijn huidige vorm, maar onze onderneming en expertise in het vakgebied
-					gaat al tientallen jaren terug. Vroeger gekend als G&V, staan we vandaag nog altijd garant voor dezelfde
-					kwaliteit en tevredenheid.<br /><br />
-
-					Havolli is een renovatiebedrijf, wij dienen residentiële, commerciële en industriële eigendommen 
-					over heel Vlaanderen. Wij gaan snel aan de slag en behandelen dringende zaken met spoed. <br /><br />
-					
-					Contacteer ons vrijblijvend voor een gratis offerte per telefoon 0487 64 03 21 of via ons antwoordformulier, of e-mail.
-				</p>
+			<div class="contactForm">
+				<form action="contactform.php" method="post">
+				<h4 class="contactFormTitle">Wij contacteren je zo snel mogelijk terug. Of stuur ons een mail naar info@havolli.be </h4><br/>
+					<input name="name" type="text" id="name" placeholder="* Naam" required />
+					<input name="email" type="email" id="email" placeholder="* Email" required />
+					<input name="phone" type="text" id="phone" placeholder="   Telefoon" />
+					<input name="location" type="text" id="location" placeholder="   Locatie" />
+					<select  name="selector" id="selector" placeholder="Ik wens info over">
+						<option value="" disabled selected>Ik wens een offerte voor</option>
+						<option value="Algemene dakwerken">Algemene dakwerken</option>
+						<option value="Renovatiewerken">Renovatiewerken</option>
+						<option value="Afbraakwerken">Afbraakwerken</option>
+						<option value="Afvoer asbest">Afvoer asbest</option>
+					</select>
+					<textarea name="message" rows="4" placeholder="... "></textarea>
+					<button name="submit" type="submit" value="submit">Verzend</button>
+				</form>
 			</div>
 		</div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                
-            </div>
-        </div>
-    </div>
-    
+	</div>
+
 
     <div class="contact">
         <div class="container">
@@ -150,19 +144,6 @@
     <script src="https://kit.fontawesome.com/9ec55b6b03.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
-    <script>
 
-        // Scroll Link Functionality
-        $(".scrollLink").on("click", function () {
-            $("body").removeClass("activeNavLinks");
-            var scrollTo = this.getAttribute("scrolllink");
-            if (window.innerWidth <= 500) {
-                $('html, body').animate({ scrollTop: $(scrollTo).offset().top - 65 }, 600, 'easeInOutExpo');
-            } else {
-                $('html, body').animate({ scrollTop: $(scrollTo).offset().top - 50 }, 600, 'easeInOutExpo');
-            }
-        });
-
-    </script>
 </body>
 </html>
