@@ -1,7 +1,11 @@
-
 * {
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
 }
 
 body {
@@ -9,28 +13,33 @@ body {
 }
 
 h1 {
-    color: white;
-    font-size: 8vw;
+    color: #ffffff;
+    font-size: 14vw;
     font-weight: bold;
     text-align: left;
-	text-shadow: 0px 0px 5px rgba(50, 50, 50, 1);
 }
 
 h2 {
-	font-size: 6vw;
+	color: #ffffff;
+	font-size: 8vw;
 }
 
 h3 {
 	font-size: 6vw;
 }
 
+h5 {
+	font-size: 12px;
+}
+
 .myButton {
-	background-color:#ba2222;
+	background-color: darkgrey;
+	background-color: 2;
 	border-radius:22px;
 	display:inline-block;
 	font-weight: bold;
 	cursor:pointer;
-	color: white;
+	color: #ffffff;
 	font-family:Arial;
 	font-size:19px;
 	padding:16px 24px;
@@ -38,7 +47,7 @@ h3 {
 	margin-top: 50px;
 }
 .myButton:hover {
-	background-color:#ab2222EE;
+	background-color: #BA2222;
 	color: white;
 }
 .myButton:active {
@@ -48,11 +57,11 @@ h3 {
 
 @media (min-width: 1000px) {
     h1 {
-        font-size: 75px;
+        font-size: 95px;
     }
 	
 	h2 {
-		font-size: 55px;
+		font-size: 75px;
 	}
 }
 
@@ -65,34 +74,44 @@ h3 {
 	z-index: 1500;
 }
 
+.pageTop a {
+	text-decoration: none;
+	color: black;
+}
+
 .displayPageTop {
 	margin-left: 5%;
 	margin-right: 5%;
 }
 
+@supports (-webkit-overflow-scrolling: touch) { 	
+body *: { 		
+background-attachment: scroll; 	
+	} 
+}
+
 .bgIndex {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/bgIndex.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/bgIndex.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
+    background-position: 35%;
+    background-attachment: scroll;
     padding-top: calc((100vh - 280px)/2);
     box-sizing: border-box;
+
 }
 
 .contactPage {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/bgContact.jpg);
 	filter: brightness(120%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
 }
 
 .contactUs {
 	color: white;
 }
-
 
 @media (min-width: 1000px) {
     h3 {
@@ -119,12 +138,16 @@ h3 {
     margin-right: auto;
     -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.20);
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10);
-	background: #FAFDF3;
+	background: #fffff;
 }
 
 .navbar {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.nav-link{
+	color: black;
 }
 
 
@@ -156,7 +179,7 @@ h3 {
      position: absolute;
      height: 3px;
      width: 100%;
-     background: black;
+     background: #BA2222;
      border-radius: 1px;
      opacity: 1;
      left: 0;
@@ -198,24 +221,24 @@ h3 {
 }
 
 /*styling navbar*/
-.brandLogo {
-    width: 210px;
-    height: auto;
-}
-
 .navbar a {
-    color: black;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .navbar a:hover {
-    color: #ba2222;
+    color: #BA2222;
+}
+
+.brandLogo{
+	Width: 150px;
+	height: auto;
 }
 
 /*intro*/
 .sectionTitles {
 	font-size: 50px;
+	color: #BA2222;
 }
 
 .intro {
@@ -236,23 +259,44 @@ h3 {
 }
 
 /*services*/
+.servicesTitle {
+	display: inline-block;
+	font-size: 50px;
+	color: #BA2222;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
 .services {
-    margin-bottom: 50px;
 	background-color: #FAFDF3;
 }
+
+.logoResponsive{
+	width: 85px;
+	height: auto;
+}
+
+.servicesHeadline{
+	font-size: 32px;
+	color: #BA2222;
+}
+	
 
 /*contact*/
 .contact {
     padding-top: 30px;
     font-size: 20px;
     font-weight: 600;
-    background-color: #FAFDF3;
+    background-color: white;
 }
 
-.col {
-    margin-bottom: 20px;
+.contactLinks{
+	line-height: 16px;
+	margin-bottom: 1rem;
 }
-
+	
+	
+	
 .contact a {
     color: #1f1f1f;
     text-decoration: none;
@@ -274,28 +318,28 @@ h3 {
 }
 
 .addresslines {
-	margin-left: 52px;
+	margin-left: 30px;
 }
 	
 .accentColor {
-	color: #BA2222;
+	color: black;
 }
 
 .contactForm {
 	margin-bottom: 75px;
 	width: 650px;
-	border: 1px solid white;
+	border: 1px solid darkgrey;
 	border-radius: 20px;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	background-color: #2e3739;
 	margin-left: 50px;
+	
 }
 
 .contactFormTitle {
 	font-weight: bold;
 	font-size: 18px;
-	color: lightgray;
+	color: black;
 }
 
 form {
@@ -305,11 +349,12 @@ form {
     border-radius: 10px;
 	margin-left: auto;
 	margin-right: auto;
+	border-color: black;
 }
 
 form input, form select {
     transition: box-shadow .3s;
-    border: solid 1px #ccc;
+    border: solid 1px darkgrey;
     margin: 10px 0;
     padding: 10px 10px 10px 20px;
     outline: none;
@@ -332,13 +377,13 @@ form textarea {
 }
 
 form input:hover, form select:hover, form textarea:hover {
-    border: solid 1px rgba(186,34,34,.5);
-    box-shadow: 0 0 5px rgba(186,34,34,.5);
+    border: solid 1px rgba(186, 34, 34, 0.6);
+    box-shadow: 0 0 5px rgba(186, 34, 34, 0.6);
 }
 
 input:focus, select:focus, textarea:focus {
-    border: solid 1px rgba(186,34,34,.5);
-    box-shadow: 0 0 5px rgba(186,34,34,.5);
+    border: solid 1px rgba(186, 34, 34, 0.4);
+    box-shadow: 0 0 5px rgba(186, 34, 34, 0.4);
 }
 
 form select option {
@@ -360,9 +405,15 @@ form button {
 
 
 @media (max-width: 769px) {
-    .row {
-        flex-direction: column;
-    }
+	
+	.logoResponsive{
+		width: 50px;
+		height: auto;
+	}
+	
+	.servicesHeadline{
+		font-size: 3.5vw;
+	}
 
     .col {
         margin: 20px 0;
@@ -371,6 +422,11 @@ form button {
     .contactDetails {
         margin-left: 10px;
     }
+	
+	.contactCol {
+		flex-direction: column;
+		margin-left: 5%;
+	}
 
     .social a {
         margin: 10px 10px 10px 10px;
@@ -394,6 +450,7 @@ form button {
 		font-size: 50px;
 	}
 }
+	
 
 /*contact us page*/
 .contactContainer {
@@ -407,23 +464,175 @@ form button {
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 20px;
+	color: #BA2222;
 }
 
-
+.accentuateContact{
+	color: black;
+}
 
 .contactPage {
-	background-color: #FAFDF3;
+    background-color: rgb(250, 245, 200);
+}
+
+.contactInformation {
+	margin: 20px;
+}
+
+.brandLogoExtended {
+	width: 250px;
+	height: auto;
 }
 
 /*footer with disclaimer/logo*/
 .proventus {
-    height: 40px;
-    width: auto;
+	height: 25px;
+	width: auto;
+	margin-top: -20px;
 }
 
 .disclaimer {
-    text-align: center;
-    margin: 20px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	color: darkgrey;
 }
 
+/*Gallery page*/
 
+.bgGallery{
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+#gallery {
+	padding-top: 30px;
+}
+
+@media screen and (min-width: 991px) {
+	#gallery{
+		padding: 60px 30px 0 30px;
+	}
+}
+
+.img-wrapper {
+	position: relative;
+	margin-top: 15px;
+}
+
+.img-wrapper img {
+	width: 100%;
+}
+
+.img-wrapper {
+	position: relative;
+	margin-top: 15px;
+	cursor:pointer;
+}
+  
+.img-overlay {
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+
+.img-overlay i {
+    color: #fffff;
+    font-size: 3em;
+}
+
+#overlay {
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	-webkit-user-select: none;
+	-moz-user-select: none;    
+	-ms-user-select: none; 
+	user-select: none; 
+}
+ 
+#overlay img {
+	margin: 0;
+	width: 80%;
+	height: auto;
+	object-fit: contain;
+	padding: 5%;
+}
+
+@media screen and (min-width:768px) {
+	#overlay img{
+		width: 60%;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	#overlay img{
+		width: 50%;
+	}
+}
+
+#nextButton {
+	color: #fff;
+	font-size: 3em;
+	transition: opacity 0.8s;
+}
+
+#nextButton:hover {
+    opacity: 0.7;
+}
+
+#prevButton {
+	color: #fff;
+	font-size: 3em;
+	transition: opacity 0.8s;
+
+}
+
+#prevButton:hover {
+    opacity: 0.7;
+}
+
+#exitButton {
+	color: #fff;
+	font-size: 2em;
+	transition: opacity 0.8s;
+	position: absolute;
+	top: 60px;
+	right: 30px;
+}
+
+#exitButton:hover {
+	opacity: 0.7;
+}
+
+@media screen and (min-width:768px) {
+    #nextButton{
+		font-size: 3em;
+	}
+	#prevButton {
+		font-size: 3em;
+	}
+	#exitButton {
+		font-size: 3em;
+	}
+}
+
+i:hover{
+	cursor: pointer;	
+}
+
+	
