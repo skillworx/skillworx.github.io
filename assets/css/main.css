@@ -43,7 +43,6 @@ h5 {
 
 .myButton {
 	background-color: darkgrey;
-	background-color: 2;
 	border-radius:22px;
 	display:inline-block;
 	font-weight: bold;
@@ -480,9 +479,6 @@ form button {
 	color: black;
 }
 
-.contactPage {
-    background-color: rgb(250, 245, 200);
-}
 
 .contactInformation {
 	margin: 20px;
